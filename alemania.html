@@ -15,16 +15,6 @@
     <link rel="stylesheet" href="css/magnific-popup.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery-3.7.0.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/magnific-popup.min.js"></script>
-    <script src="js/blazy.min.js"></script>
-    <script src="js/parazoom.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-T66o6R7H50WobKsR3WfCwGLeZdNSopJ4Jm2VOgPKc9HrjsEgA8PCjQ5sm8jC/0RF7JAVFZdLwQ5gA9/pT9ri6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
@@ -104,12 +94,12 @@
                 </div>
                 <div class="grid-single">
                     <div class="grid-sizer"></div>
-                    <div class="grid-item"><a href="images/alemania1.jpeg" data-effect="mfp-zoom-in"><img class="lazyload b-lazy" data-src="images/alemania1.jpeg" alt="9"></a></div>
-					<div class="grid-item"><a href="images/alemania2.jpeg" data-effect="mfp-zoom-in"><img class="lazyload b-lazy" data-src="images/alemania2.jpeg" alt="10"></a></div>
-					<div class="grid-item"><a href="images/alemania3.jpeg" data-effect="mfp-zoom-in"><img class="lazyload b-lazy" data-src="images/alemania3.jpeg" alt="11"></a></div>
-					<div class="grid-item"><a href="images/alemania4.jpeg" data-effect="mfp-zoom-in"><img class="lazyload b-lazy" data-src="images/alemania4.jpeg" alt="12"></a></div>
-					<div class="grid-item"><a href="images/alemania5.jpeg" data-effect="mfp-zoom-in"><img class="lazyload b-lazy" data-src="images/alemania5.jpeg" alt="12"></a></div>
-					<div class="grid-item"><a href="images/alemania6.jpeg" data-effect="mfp-zoom-in"><img class="lazyload b-lazy" data-src="images/alemania6.jpeg" alt="14"></a></div>
+                    <div class="grid-item"><a href="images/alemania1.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/alemania1.jpeg" src="images/alemania1.jpeg" alt="1"></a></div>
+                    <div class="grid-item"><a href="images/alemania2.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/alemania2.jpeg" src="images/alemania2.jpeg" alt="2"></a></div>
+                    <div class="grid-item"><a href="images/alemania3.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/alemania3.jpeg" src="images/alemania3.jpeg" alt="3"></a></div>
+                    <div class="grid-item"><a href="images/alemania4.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/alemania4.jpeg" src="images/alemania4.jpeg" alt="4"></a></div>
+                    <div class="grid-item"><a href="images/alemania5.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/alemania5.jpeg" src="images/alemania5.jpeg" alt="5"></a></div>
+                    <div class="grid-item"><a href="images/alemania6.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/alemania6.jpeg" src="images/alemania6.jpeg" alt="6"></a></div>
                 </div>
 
                 <div class="grid-nav-wrap">
@@ -134,6 +124,25 @@
     </div>
 </footer>
 
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/blazy.min.js"></script>
+<script src="js/parazoom.min.js"></script>
+<script src="js/script.js"></script>
 
+<script>
+    // Comprobar si la página ya se ha recargado una vez en esta sesión
+    if (!sessionStorage.getItem('reloaded')) {
+        sessionStorage.setItem('reloaded', 'true');
+        // Recargar la página después de 3 segundos
+        setTimeout(function() {
+            location.reload();
+        }, 1000);
+    }
+</script>
 </body>
 </html>
