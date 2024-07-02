@@ -15,6 +15,12 @@
 	<link rel="stylesheet" href="css/magnific-popup.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<style>
+        /* Oculta el contenido inicial */
+        body {
+            visibility: hidden;
+        }
+    </style>
 </head>
 <body>
 
@@ -132,5 +138,10 @@
 <script src="js/blazy.min.js"></script>
 <script src="js/parazoom.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+    window.addEventListener('load', function() {
+        document.body.style.visibility = 'visible';
+    });
+</script>
 </body>
 </html>
