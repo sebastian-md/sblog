@@ -137,19 +137,7 @@
 <script src="js/parazoom.min.js"></script>
 <script src="js/script.js"></script>
 
-<script>
-    // Obtener el timestamp actual y el timestamp almacenado
-    const now = Date.now();
-    const lastReload = localStorage.getItem('lastReload');
 
-    // Si la página no se ha recargado en los últimos 10 segundos, recargarla
-    if (!lastReload || now - lastReload > 30000) {
-        localStorage.setItem('lastReload', now);
-        setTimeout(function() {
-            location.reload();
-        }, 3000);
-    }
-</script>
 
 </body>
 </html>
