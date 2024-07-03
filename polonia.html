@@ -140,17 +140,17 @@
 <script>
     // Comprobar si la página ya se ha recargado una vez en esta sesión
     if (!sessionStorage.getItem('reloaded')) {
-		
+
         sessionStorage.setItem('reloaded', 'true');
         // Recargar la página después de 3 segundos
         setTimeout(function() {
             location.reload();
-        }, 2000);
+        }, 3000);
 
 		 // Segunda recarga después de 4 segundos
 		 setTimeout(function() {
             location.reload();
-        }, 4000);
+        }, 5000);
 
     }
 </script>
