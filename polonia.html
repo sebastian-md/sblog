@@ -87,7 +87,7 @@
         <div class="content-page gallery-wrap">
             <div class="content-inner">
                 <div class="title-wrapper text-center">
-                    <h2 class="title">Italia</h2>
+                    <h2 class="title">polonia</h2>
                     <div class="subtitle">            
                         <p>Cuna del Renacimiento, llena de historia y belleza en cada rincón.</p>
                     </div>
@@ -95,14 +95,14 @@
                 <div class="grid-single">
                     <div class="grid-sizer"></div>
 
-                    <div class="grid-item"><a href="images/italia1.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/italia1.jpeg" src="images/italia1.jpeg" alt="1"></a></div>
-                    <div class="grid-item"><a href="images/italia2.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/italia2.jpeg" src="images/italia2.jpeg" alt="2"></a></div>
-                    <div class="grid-item"><a href="images/italia3.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/italia3.jpeg" src="images/italia3.jpeg" alt="3"></a></div>
-                    <div class="grid-item"><a href="images/italia4.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/italia4.jpeg" src="images/italia4.jpeg" alt="4"></a></div>
-                    <div class="grid-item"><a href="images/italia5.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/italia5.jpeg" src="images/italia5.jpeg" alt="5"></a></div>
-                    <div class="grid-item"><a href="images/italia6.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/italia6.jpeg" src="images/italia6.jpeg" alt="6"></a></div>
-                    <div class="grid-item"><a href="images/italia7.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/italia7.jpeg" src="images/italia7.jpeg" alt="7"></a></div>
-                    <div class="grid-item"><a href="images/italia8.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/italia8.jpeg" src="images/italia8.jpeg" alt="8"></a></div> 
+                    <div class="grid-item"><a href="images/polonia1.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/polonia1.jpeg" src="images/polonia1.jpeg" alt="1"></a></div>
+                    <div class="grid-item"><a href="images/polonia2.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/polonia2.jpeg" src="images/polonia2.jpeg" alt="2"></a></div>
+                    <div class="grid-item"><a href="images/polonia3.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/polonia3.jpeg" src="images/polonia3.jpeg" alt="3"></a></div>
+                    <div class="grid-item"><a href="images/polonia4.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/polonia4.jpeg" src="images/polonia4.jpeg" alt="4"></a></div>
+                    <div class="grid-item"><a href="images/polonia5.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/polonia5.jpeg" src="images/polonia5.jpeg" alt="5"></a></div>
+                    <div class="grid-item"><a href="images/polonia6.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/polonia6.jpeg" src="images/polonia6.jpeg" alt="6"></a></div>
+                    <div class="grid-item"><a href="images/polonia7.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/polonia7.jpeg" src="images/polonia7.jpeg" alt="7"></a></div>
+                    <div class="grid-item"><a href="images/polonia8.jpeg" data-effect="mfp-zoom-in"><img class="b-lazy" data-src="images/polonia8.jpeg" src="images/polonia8.jpeg" alt="8"></a></div> 
                 </div>
 
                 <div class="grid-nav-wrap">
@@ -140,11 +140,18 @@
 <script>
     // Comprobar si la página ya se ha recargado una vez en esta sesión
     if (!sessionStorage.getItem('reloaded')) {
+		
         sessionStorage.setItem('reloaded', 'true');
-        // Recargar la página cuando todos los recursos han terminado de cargarse
-        window.onload = function() {
+        // Recargar la página después de 3 segundos
+        setTimeout(function() {
             location.reload();
-        };
+        }, 2000);
+
+		 // Segunda recarga después de 4 segundos
+		 setTimeout(function() {
+            location.reload();
+        }, 4000);
+
     }
 </script>
 
