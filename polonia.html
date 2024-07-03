@@ -138,20 +138,16 @@
 <script src="js/script.js"></script>
 
 <script>
-    // Comprobar si la página ya se ha recargado una vez en esta sesión
-    if (!sessionStorage.getItem('reloaded')) {
+    // Obtener el timestamp actual y el timestamp almacenado
+    const now = Date.now();
+    const lastReload = localStorage.getItem('lastReload');
 
-        sessionStorage.setItem('reloaded', 'true');
-        // Recargar la página después de 3 segundos
+    // Si la página no se ha recargado en los últimos 10 segundos, recargarla
+    if (!lastReload || now - lastReload > 30000) {
+        localStorage.setItem('lastReload', now);
         setTimeout(function() {
             location.reload();
         }, 3000);
-
-		 // Segunda recarga después de 4 segundos
-		 setTimeout(function() {
-            location.reload();
-        }, 5000);
-
     }
 </script>
 
